@@ -11,6 +11,10 @@ public class Task {
         IN_PROGRESS
     }
 
+    public static void setNextId(int id) {
+        nextId = id;
+    }
+
     private Status status;
     private Date createdAt;
     private Date updatedAt;

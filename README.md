@@ -34,12 +34,12 @@ O objetivo do projeto é praticar conceitos de:
 
 src/
 ├── main/
-│ ├── java/
-│ │ └── com/jv/tasktracker/
-│ │ ├── main
-│ │ ├── model
-│ │ └── service
-└── resources
+│   ├── java/
+│   │   └── com/jv/tasktracker/
+│   │       ├── main
+│   │       ├── model
+│   │       └── service
+│   └── resources
 
 ---
 

@@ -31,7 +31,7 @@ O objetivo do projeto é praticar conceitos de:
 ---
 
 ## 📂 Estrutura do Projeto
-
+```
 src/
 ├── main/
 │   ├── java/
@@ -41,7 +41,7 @@ src/
 │   │       └── service
 │   └── resources
 
-
+```
 ---
 
 ## ▶️ Como Executar

@@ -35,7 +35,7 @@ O objetivo do projeto é praticar conceitos de:
 src/
 ├── main/
 │   ├── java/
-│   │   └── com/jv/tasktracker/
+│   │   └── com.jv.tasktracker/
 │   │       ├── main
 │   │       ├── model
 │   │       └── service
@@ -57,7 +57,7 @@ src/
 
 As tarefas são salvas automaticamente em um arquivo JSON localizado em:
 
-data/tasks.json
+tasks.json
 
 Os dados são carregados automaticamente ao iniciar o programa.
 

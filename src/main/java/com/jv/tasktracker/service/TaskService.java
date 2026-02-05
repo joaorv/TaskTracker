@@ -113,4 +113,33 @@ public class TaskService {
         }
         System.out.println("------------------------------------------------------------------------------------------------------");
     }
+
+    public void getTaskToDo() {
+        for (Task task : tasks) {
+            if (task.getStatus().equals(Status.TODO)) {
+                System.out.println("------------------------------------------------------------------------------------------------------");
+                System.out.println("ID: " + task.getId() + "| DESCRIÇÃO: " + task.getDescricao() + "| STATUS: " + task.getStatus() + "| DATA CRIACAO: " + task.getDataCriacao() + "| DATA ATUALIZACAO: " + task.getDataAtualizacao());
+            }
+        }
+    }
+
+    public void getTaskInProgress() {
+        for (Task task : tasks) {
+            if (task.getStatus().equals(Status.IN_PROGRESS)) {
+                System.out.println("------------------------------------------------------------------------------------------------------");
+                System.out.println("ID: " + task.getId() + "| DESCRIÇÃO: " + task.getDescricao() + "| STATUS: " + task.getStatus() + "| DATA CRIACAO: " + task.getDataCriacao() + "| DATA ATUALIZACAO: " + task.getDataAtualizacao());
+            }
+        }
+    }
+
+    public void getTaskDone(){
+        for (Task task : tasks) {
+            if (task.getStatus().equals(Status.DONE)) {
+                System.out.println("------------------------------------------------------------------------------------------------------");
+                System.out.println("ID: " + task.getId() + "| DESCRIÇÃO: " + task.getDescricao() + "| STATUS: " + task.getStatus() + "| DATA CRIACAO: " + task.getDataCriacao() + "| DATA ATUALIZACAO: " + task.getDataAtualizacao());
+            }
+        }
+    }
+
+
 }

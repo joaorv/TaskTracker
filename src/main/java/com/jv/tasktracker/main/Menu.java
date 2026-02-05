@@ -26,6 +26,9 @@ public class Menu {
                 case 3 -> atualizarStatus();
                 case 4 -> removerTask();
                 case 5 -> listarTasks();
+                case 6 -> listarTasksToDo();
+                case 7 -> listarTasksInProgress();
+                case 8 -> listarTasksDone();
                 case 0 -> System.out.println("Saindo...");
                 default -> System.out.println("Opção inválida!");
             }
@@ -39,7 +42,10 @@ public class Menu {
         System.out.println("2 - Atualizar descrição");
         System.out.println("3 - Atualizar status");
         System.out.println("4 - Remover task");
-        System.out.println("5 - Listar tasks");
+        System.out.println("5 - Listar todas as tasks");
+        System.out.println("6 - Listar tasks todo");
+        System.out.println("7 - Listar tasks in progress");
+        System.out.println("8 - Listar tasks done");
         System.out.println("0 - Sair");
         System.out.print("Escolha: ");
     }
@@ -120,4 +126,18 @@ public class Menu {
         taskService.getAllTasksToString();
     }
 
+    private void listarTasksToDo(){
+        System.out.println("\n=== LISTA DE TASKS ===");
+        taskService.getTaskToDo();
+    }
+
+    private void listarTasksInProgress(){
+        System.out.println("\n=== LISTA DE TASKS ===");
+        taskService.getTaskInProgress();
+    }
+
+    private void listarTasksDone(){
+        System.out.println("\n=== LISTA DE TASKS ===");
+        taskService.getTaskDone();
+    }
 }
